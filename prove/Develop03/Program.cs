@@ -27,7 +27,7 @@ class Program
 
         // Create a list of words from the scripture
         List<Word> words = new List<Word>();
-        string[] wordArray = scripture._text.Split(' ');
+        string[] wordArray = scripture.SplitText();
 
         foreach (string wordText in wordArray)
         {
@@ -37,8 +37,7 @@ class Program
 
         // Main logic of the program
         Console.Clear();
-        Console.WriteLine(scripture._reference + ":");
-        Console.WriteLine(scripture._text);
+        scripture.DisplayFullScripture();
         Console.WriteLine();
 
         bool allWordsHidden = false;
@@ -59,21 +58,21 @@ class Program
                     allWordsHidden = true;
 
                 Console.Clear();
-                Console.WriteLine(scripture._reference + ":");
+                scripture.DisplayReference();
 
                 foreach (Word word in words)
                 {
                     if (word._isHidden)
                         Console.Write("____ ");
                     else
-                        Console.Write(word._text + " ");
+                        word.DisplayText();
                 }
 
                 Console.WriteLine();
             }
             else
             {
-                Console.WriteLine("All words are hidden. Press any key to exit the program.");
+                Console.WriteLine("All words are hidden. Exiting the program.");
                 break;
             }
         }

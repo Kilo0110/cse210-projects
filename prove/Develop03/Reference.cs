@@ -1,8 +1,8 @@
 public class Reference
 {
-  public int _chapter;
-  public int _startVerse;
-  public int? _endVerse;
+  private int _chapter;
+  private int _startVerse;
+  private int? _endVerse;
 
   public Reference(int chapter, int startVerse, int? endVerse = null)
   {
