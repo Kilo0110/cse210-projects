@@ -2,7 +2,7 @@ public class EternalGoal : Goal
 {
   public int _totalValue;
 
-  public EternalGoal(string name, int value, int totalValue) : base(name, value)
+  public EternalGoal(string name, int value, string type, int totalValue) : base(name, value, type)
   {
     _totalValue = totalValue;
   }

@@ -3,7 +3,7 @@ public class ChecklistGoal : Goal
   private int _requiredCount;
   private int _completedCount;
 
-  public ChecklistGoal(string name, int value, int requiredCount) : base(name, value)
+  public ChecklistGoal(string name, int value, string type, int requiredCount) : base(name, value, type)
   {
     _requiredCount = requiredCount;
     _completedCount = 0;

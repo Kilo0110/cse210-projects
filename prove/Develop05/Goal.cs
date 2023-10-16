@@ -4,12 +4,12 @@ public abstract class Goal
   public int _value;
   public bool _isCompleted;
   public string _type;
-  public int _progress;
 
-  public Goal(string name, int value)
+  public Goal(string name, int value, string type)
   {
     _name = name;
     _value = value;
+    _type = type;
     _isCompleted = false;
   }
 

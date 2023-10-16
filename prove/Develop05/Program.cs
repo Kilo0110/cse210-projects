@@ -32,7 +32,7 @@ class Program
                 Console.Write("Enter goal value: ");
                 int value = int.Parse(Console.ReadLine());
 
-                Console.Write("Enter goal type (simple/eternal/checklist): ");
+                Console.Write("Enter goal type (simple/eternal/checklist/penalty): ");
                 string type = Console.ReadLine();
 
                 if (type.ToLower() == "simple")
@@ -48,6 +48,10 @@ class Program
                     Console.Write("Enter required count: ");
                     int requiredCount = int.Parse(Console.ReadLine());
                     program.CreateGoal(name, value, type, requiredCount);
+                }
+                else if (type.ToLower() == "penalty")
+                {
+                    program.CreateGoal(name, value, type, 0);
                 }
 
                 menu.DisplayMenu();
