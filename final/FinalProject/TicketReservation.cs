@@ -24,4 +24,10 @@ public class TicketReservation
     });
   }
 
+  public void RemoveEvent(int eventIndex)
+  {
+    Console.WriteLine($"Event: {_events.ElementAt(eventIndex).GetEventName()} has been successfully deleted.");
+    _events.RemoveAt(eventIndex);
+  }
+
 }

@@ -36,6 +36,21 @@ class Program
                 menu.DisplayMenu();
             }
 
+            else if (selectedMenuOption == 3)
+            {
+                Console.WriteLine("Which event would you like to remove?");
+                program.ShowEvents();
+
+                Console.Write("Enter the index of the event you would like to delete: ");
+                int eventNumberToDelete = int.Parse(Console.ReadLine()
+                );
+
+                program.RemoveEvent(eventNumberToDelete - 1);
+
+
+                menu.DisplayMenu();
+            }
+
 
             Console.Write("What would you like to do? ");
             selectedMenuOption = int.Parse(Console.ReadLine());

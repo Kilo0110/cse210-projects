@@ -13,6 +13,12 @@ public abstract class Event
     _seats = numberOfSeats;
   }
 
+  public virtual string GetEventName()
+  {
+    return _name;
+
+  }
+
   public abstract string GetEventDetails();
   public abstract void ReserveSeat(int seatNumber);
   public abstract string GetAvailableSeats();

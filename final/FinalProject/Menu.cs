@@ -6,7 +6,7 @@ public class Menu
 
   public Menu()
   {
-    string[] prompts = { "Book a ticket", "View all events", "Remove events", "Exit" };
+    string[] prompts = { "Book a ticket", "View all events", "Remove event", "Exit" };
 
     foreach (string prompt in prompts)
     {
