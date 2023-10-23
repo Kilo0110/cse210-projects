@@ -16,7 +16,6 @@ public abstract class Event
   public virtual string GetEventName()
   {
     return _name;
-
   }
 
   public abstract string GetEventDetails();

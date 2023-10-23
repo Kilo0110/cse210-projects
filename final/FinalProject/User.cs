@@ -17,8 +17,21 @@ public class User
     return $"First Name: {_firstName}\nLast Name: {_lastName}\nAge: {_age}";
   }
 
+  public string GetUserName()
+  {
+    return $"{_lastName} {_firstName}";
+  }
+
   public void AddNewTicket(Ticket ticket)
   {
     _tickets.Add(ticket);
+  }
+
+  public void DisplayTickets()
+  {
+    _tickets.ForEach(ticket =>
+    {
+      ticket.DisplayTicketDetails();
+    });
   }
 }

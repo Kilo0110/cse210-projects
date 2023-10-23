@@ -16,8 +16,14 @@ public class TicketReservation
     _events.Add(hamletPlay);
   }
 
+  public Event GetEvent(int eventIndex)
+  {
+    return _events.ElementAt(eventIndex);
+  }
+
   public void ShowEvents()
   {
+    Console.WriteLine("");
     _events.ForEach(eventItem =>
     {
       Console.WriteLine($"{_events.IndexOf(eventItem) + 1}. {eventItem.GetEventDetails()}\n");

@@ -17,7 +17,7 @@ public class Menu
 
   public void DisplayMenu()
   {
-
+    Console.WriteLine("");
     _mainMenuPrompts.ForEach(prompt =>
     {
       Console.WriteLine($"{_mainMenuPrompts.IndexOf(prompt) + 1}. {prompt.GetPrompt()}");

@@ -10,4 +10,10 @@ public class Ticket
     _seat = seat;
     _user = user;
   }
+
+  public void DisplayTicketDetails()
+  {
+    Console.WriteLine($"\nTicket Details\nEvent Name: {_event.GetEventName()}\n{_seat.GetSeatDetails()}\nBooked for: {_user.GetUserName()}");
+
+  }
 }
