@@ -12,13 +12,4 @@ public class TheaterPlay : Event
     return $"Event Name: {_name}\nDate: {_date}\nVenue: {_venue}\nNumber of Seats: {_seats}\nPlayWright: {_playWright}";
   }
 
-  public override void ReserveSeat(int seatNumber)
-  {
-
-  }
-
-  public override string GetAvailableSeats()
-  {
-    return "";
-  }
 }

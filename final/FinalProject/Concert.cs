@@ -14,14 +14,4 @@ public class Concert : Event
     string artistNames = string.Join(", ", _artists.Select(artist => artist.GetArtist()));
     return $"Event Name: {_name}\nDate: {_date}\nVenue: {_venue}\nNumber of Seats: {_seats}\nArtists: {artistNames}";
   }
-
-  public override void ReserveSeat(int seatNumber)
-  {
-
-  }
-
-  public override string GetAvailableSeats()
-  {
-    return "";
-  }
 }

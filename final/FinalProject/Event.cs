@@ -19,6 +19,6 @@ public abstract class Event
   }
 
   public abstract string GetEventDetails();
-  public abstract void ReserveSeat(int seatNumber);
-  public abstract string GetAvailableSeats();
+  public virtual void ReserveSeat(int seatNumber) { }
+  public virtual void GetAvailableSeats() { }
 }
