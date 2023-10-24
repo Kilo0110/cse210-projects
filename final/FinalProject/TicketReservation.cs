@@ -26,7 +26,7 @@ public class TicketReservation
     Console.WriteLine("");
     _events.ForEach(eventItem =>
     {
-      Console.WriteLine($"{_events.IndexOf(eventItem) + 1}. {eventItem.GetEventDetails()}\n");
+      Console.WriteLine($"{_events.IndexOf(eventItem) + 1}. {eventItem.GetEventDetails()}\nAvailable Seats: {eventItem.GetAvailableSeats()}\n");
     });
   }
 

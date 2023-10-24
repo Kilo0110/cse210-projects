@@ -54,6 +54,8 @@ class Program
 
                 bookedTicket.DisplayTicketDetails();
 
+                preferredEvent.ReserveSeat(seatNumber, preferredSeat);
+
                 menu.DisplayMenu();
 
             }
